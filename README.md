@@ -17,7 +17,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ## TODO
 
-- Fix tests
 - API call
 - Compare all [the popular state management approaches](https://flutter.dev/docs/development/data-and-backend/state-mgmt/options)
 
