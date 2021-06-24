@@ -2,7 +2,7 @@ pre-commit:
   commands:
     lint:
       glob: '*.dart'
-      run: 'dart fix lib && git add .'
+      run: dart fix lib && git add .
     format:
       glob: '*.dart'
       run: flutter format {staged_files} && git add .
