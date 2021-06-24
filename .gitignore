@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+Brewfile.lock.json
 
 # IntelliJ related
 *.iml

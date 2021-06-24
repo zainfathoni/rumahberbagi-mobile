@@ -1,0 +1,2 @@
+brew 'lcov'
+brew 'lefthook'
