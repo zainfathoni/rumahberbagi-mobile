@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:rumahberbagi_mobile/main.dart';
 
-Widget createAppWidget() => MyApp();
+Widget createAppWidget() => const MyApp();
 
 void main() {
   group('Login Screen Tests', () {

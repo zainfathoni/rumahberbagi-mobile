@@ -13,10 +13,10 @@ class CustomRouter {
       case RouteName.login:
         return MaterialPageRoute(builder: (context) => Login());
       case RouteName.home:
-        return MaterialPageRoute(builder: (context) => Home());
+        return MaterialPageRoute(builder: (context) => const Home());
       default:
         return MaterialPageRoute(
-            builder: (contex) => Scaffold(
+            builder: (contex) => const Scaffold(
                   body: Center(
                     child: Text('404 Not Found'),
                   ),

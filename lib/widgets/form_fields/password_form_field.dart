@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
@@ -19,17 +18,12 @@ class PasswordFormField extends HookWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         suffixIcon: IconButton(
-          icon: Icon(Icons.visibility),
+          icon: const Icon(Icons.visibility),
           onPressed: () {
             _hidePassword.value = !_hidePassword.value;
           },
         ),
       ),
-      onChanged: (value) {
-        if (!kReleaseMode) {
-          print(value);
-        }
-      },
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'Password must not be empty';

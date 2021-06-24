@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../../extensions/email_validator.dart';
 
@@ -16,11 +15,6 @@ class EmailFormField extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
       ),
-      onChanged: (value) {
-        if (!kReleaseMode) {
-          print(value);
-        }
-      },
       validator: (value) {
         if (!value.isValidEmail()) {
           return 'Please enter valid email';
