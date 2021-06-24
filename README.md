@@ -31,6 +31,7 @@ Please make sure that [Homebrew](https://brew.sh) is already installed in your l
 
 ```shell
 brew bundle
+lefthook install
 ```
 
 These are the tools that will be installed by that command above:
@@ -44,6 +45,8 @@ We need [lcov](http://ltp.sourceforge.net/coverage/lcov.php) to visualise the co
 We are using [Lefthook](https://github.com/evilmartians/lefthook) for [managing our Git pre-commit hooks across the contributors](https://blog.devgenius.io/easy-git-hooks-for-flutter-f2927cbbcfd4).
 
 We are also using Lefthook for [running our commonly-used scripts](https://github.com/evilmartians/lefthook/blob/master/docs/full_guide.md#run-githook-group-directly).
+
+The `lefthook install` command ensure that your [lefthook.yml](lefthook.yml) file is synced with your local Git hooks.
 
 ## Commonly-used Scripts
 
