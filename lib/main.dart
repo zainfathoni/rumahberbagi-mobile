@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rumahberbagi_mobile/utils/router_utils.dart';
+import 'utils/router_utils.dart';
 
 void main() {
   runApp(const MyApp());

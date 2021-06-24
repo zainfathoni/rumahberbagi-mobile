@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rumahberbagi_mobile/screens/home.dart';
-import 'package:rumahberbagi_mobile/screens/login.dart';
+import '../screens/home.dart';
+import '../screens/login.dart';
 
 class RouteName {
   static const String login = '/';

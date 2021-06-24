@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rumahberbagi_mobile/utils/router_utils.dart';
-import 'package:rumahberbagi_mobile/widgets/form_fields/email_form_field.dart';
-import 'package:rumahberbagi_mobile/widgets/form_fields/password_form_field.dart';
+import '../utils/router_utils.dart';
+import '../widgets/form_fields/email_form_field.dart';
+import '../widgets/form_fields/password_form_field.dart';
 
 class Login extends StatelessWidget {
   Login({Key? key}) : super(key: key);
