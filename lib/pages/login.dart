@@ -31,7 +31,8 @@ class _LoginState extends State<Login> {
                   TextFormField(
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                      hintText: 'Email',
+                      labelText: 'Email',
+                      hintText: 'Please enter a valid email',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -56,7 +57,8 @@ class _LoginState extends State<Login> {
                     keyboardType: TextInputType.visiblePassword,
                     obscureText: _isHidePassword,
                     decoration: InputDecoration(
-                      hintText: 'Password',
+                      labelText: 'Password',
+                      hintText: 'Please enter a secure password',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
