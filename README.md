@@ -45,7 +45,7 @@ We are using [Lefthook](https://github.com/evilmartians/lefthook) for [managing 
 
 We are also using Lefthook for [running our commonly-used scripts](https://github.com/evilmartians/lefthook/blob/master/docs/full_guide.md#run-githook-group-directly).
 
-The `lefthook install` command ensure that your [lefthook.yml](lefthook.yml) file is synced with your local Git hooks.
+The `lefthook install` command ensures that your [lefthook.yml](lefthook.yml) file is synced with your local Git hooks.
 
 ## Commonly-used Scripts
 
