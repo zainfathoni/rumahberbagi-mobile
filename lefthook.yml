@@ -1,0 +1,8 @@
+coverage:
+  commands:
+    generate_code_coverage:
+      run: flutter test --coverage
+    generate_html_report:
+      run: genhtml coverage/lcov.info -o coverage
+    open_html_report:
+      run: open coverage/index.html
