@@ -1,21 +1,16 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:rumahberbagi_mobile/utils/router_utils.dart';
 import 'package:rumahberbagi_mobile/widgets/form_fields/email_form_field.dart';
 
-class Login extends StatefulWidget {
-  Login({Key? key}) : super(key: key);
-
-  @override
-  _LoginState createState() => _LoginState();
-}
-
-class _LoginState extends State<Login> {
+class Login extends HookWidget {
   final _formKey = GlobalKey<FormState>();
-  bool _isHidePassword = true;
 
   @override
   Widget build(BuildContext context) {
+    final _hidePassword = useState(true);
+
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.all(8),
@@ -32,7 +27,7 @@ class _LoginState extends State<Login> {
                   SizedBox(height: 12),
                   TextFormField(
                     keyboardType: TextInputType.visiblePassword,
-                    obscureText: _isHidePassword,
+                    obscureText: _hidePassword.value,
                     decoration: InputDecoration(
                       labelText: 'Password',
                       hintText: 'Please enter a secure password',
@@ -42,7 +37,7 @@ class _LoginState extends State<Login> {
                       suffixIcon: IconButton(
                         icon: Icon(Icons.visibility),
                         onPressed: () {
-                          setState(() => _isHidePassword = !_isHidePassword);
+                          _hidePassword.value = !_hidePassword.value;
                         },
                       ),
                     ),
