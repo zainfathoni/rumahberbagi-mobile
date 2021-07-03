@@ -8,6 +8,9 @@ void main() {
     final Auth auth = Auth(email: 'me@zainf.dev', password: 'p4ssw0rd');
     final LoginUsecase loginUsecase = LoginUsecase(auth);
 
-    expect(await loginUsecase.run(), const TypeMatcher<User>());
+    final User user = await loginUsecase.run();
+    expect(user, const TypeMatcher<User>());
+    expect(user.email, 'me@zainf.dev');
+    expect(user.username, 'zainf');
   });
 }
